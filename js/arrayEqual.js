@@ -17,7 +17,9 @@ function isArrayEqual(value1 = [], value2 = []) {
     if (value1.length === value2.length) {
         for (var i = 0; i < value1.length; i++) {
             const index = hash.indexOf(value1[i]);
+            //console.log(" 个 "+value1[i]);
             if (index > -1) {
+                //console.log(index);
                 hash.splice(index, 1);
             } else {
                 return false;
