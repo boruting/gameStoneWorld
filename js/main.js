@@ -38,8 +38,13 @@ var getNewItem = function (formula, materialArr) {
 
 
 }
-getNewItem(biao.formula, materialArr);
+//getNewItem(biao.formula, materialArr);
 //=================================================
 /**
  * JSON 表
  */
+// var mJson = $.ajax({ url: "api.json", async: false });
+// var temp = JSON.parse(mJson.responseText);
+
+// var scripts = document.getElementsByTagName("script"); 
+// var file = scripts[scripts.length - 1].getAttribute("src");

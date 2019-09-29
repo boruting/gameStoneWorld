@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":2,
-    "selecteID":3,
+    "selectedBox":8,
+    "selecteID":7,
     "searchKey":"View,bag",
     "props":{"width":2208,"sceneColor":"#000000","name":"bag","height":1242},
     "nodeParent":-1,
@@ -64,13 +64,14 @@
             "props":{"y":219,"x":97,"width":691,"var":"bagItemList","spaceY":2,"spaceX":2,"repeatY":4,"repeatX":5,"name":"bagLlist","height":641},
             "nodeParent":2,
             "label":"bagLlist",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":17,
             "child":[
                 {
+                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,item,dataSource",
                     "props":{"var":"dataSource","renderType":"render","name":"item"},
@@ -83,6 +84,7 @@
                     "compId":8,
                     "child":[
                         {
+                            "x":45,
                             "type":"Rect",
                             "searchKey":"Rect,itemBG",
                             "props":{"y":0,"width":124,"name":"itemBG","lineWidth":1,"height":124,"fillColor":"#322e2e"},
@@ -96,9 +98,10 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
                             "searchKey":"Image,icon,item_icon",
-                            "props":{"y":2,"x":2,"width":120,"var":"item_icon","name":"icon","height":120},
+                            "props":{"y":2,"x":2,"width":120,"var":"item_icon","skin":"ui/icon/SW1001.png","name":"icon","height":120},
                             "nodeParent":8,
                             "label":"icon",
                             "isDirectory":false,
@@ -109,6 +112,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,itemNum,item_numder",
                             "props":{"y":102,"x":81,"width":50,"var":"item_numder","rotation":0,"pivotY":7,"pivotX":11,"name":"itemNum","height":25,"fontSize":28,"font":"Microsoft YaHei","color":"#f4fff2","align":"right"},
@@ -123,6 +127,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,itemName,item_name",
                             "props":{"y":129,"x":0,"width":124,"var":"item_name","valign":"middle","name":"itemName","height":24,"fontSize":24,"font":"Microsoft YaHei","align":"center"},

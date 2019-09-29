@@ -1,0 +1,191 @@
+[
+  {
+    "id": "SW1001",
+    "name": "野猪肉(鲜)",
+    "res_name": "SW1001",
+    "weight": 3,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "新鲜的野猪肉,烹饪食材.使用可以增加体力值,和饥饿值"
+  },
+  {
+    "id": "SW1002",
+    "name": "野猪肉(腐)",
+    "res_name": "SW1002",
+    "weight": 3,
+    "ATK": 0,
+    "expiry": 1,
+    "describe": "坏掉的野猪肉,食用会拉肚子哦.使用可以增加体力值,和饥饿值"
+  },
+  {
+    "id": "SW1003",
+    "name": "野猪肉(烤)",
+    "res_name": "SW1003",
+    "weight": 3,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "烤熟的野猪肉,使用可以增加体力值,和饥饿值"
+  },
+  {
+    "id": "SW1004",
+    "name": "野猪肉(煮)",
+    "res_name": "SW1004",
+    "weight": 3,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "煮熟的野猪肉,使用可以增加体力值,和饥饿值"
+  },
+  {
+    "id": "KS1001",
+    "name": "铁矿石",
+    "res_name": "KS1001",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "铁矿原石,矿物材料.可冶炼铁锭"
+  },
+  {
+    "id": "KS1002",
+    "name": "铜矿石",
+    "res_name": "KS1002",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "铜矿原石,矿物材料.可冶炼铜锭"
+  },
+  {
+    "id": "KS1003",
+    "name": "银矿石",
+    "res_name": "KS1003",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "银矿原石,矿物材料.可冶炼银锭"
+  },
+  {
+    "id": "KS1004",
+    "name": "锡矿石",
+    "res_name": "KS1004",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "锡矿原石,矿物材料.可冶炼锡锭"
+  },
+  {
+    "id": "KS1005",
+    "name": "金矿石",
+    "res_name": "KS1005",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "金矿原石,矿物材料.可冶炼金锭"
+  },
+  {
+    "id": "KS1006",
+    "name": "石英石",
+    "res_name": "KS1006",
+    "weight": 4,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "石英石,矿物材料.可粉碎成石英砂,玻璃材料,石制武器材料"
+  },
+  {
+    "id": "KS1007",
+    "name": "石英沙",
+    "res_name": "KS1007",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "石英沙,矿物材料.玻璃材料"
+  },
+  {
+    "id": "KS1008",
+    "name": "石灰石",
+    "res_name": "KS1008",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "石灰石,矿物材料.可粉碎成石灰粉(生石灰)"
+  },
+  {
+    "id": "KS1009",
+    "name": "生石灰",
+    "res_name": "KS1009",
+    "weight": 5,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "生石灰,矿物材料.粉装石灰.吸潮或加水就成为熟石灰"
+  },
+  {
+    "id": "KS1010",
+    "name": "熟石灰",
+    "res_name": "KS1010",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "熟石灰,矿物材料.粉装石灰.用作涂装材料和砖瓦粘合剂,玻璃加工"
+  },
+  {
+    "id": "KS1011",
+    "name": "陶土",
+    "res_name": "KS1011",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "陶土,可以烧制陶罐 器皿"
+  },
+  {
+    "id": "DZ1001",
+    "name": "铁锭",
+    "res_name": "DZ1001",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "铁定,锻造材料.可锻造铁质材料"
+  },
+  {
+    "id": "DZ1002",
+    "name": "铜锭",
+    "res_name": "DZ1002",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "铜定,锻造材料.可锻造铜质材料"
+  },
+  {
+    "id": "DZ1003",
+    "name": "银锭",
+    "res_name": "DZ1003",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "银定,锻造材料.可锻造银质材料"
+  },
+  {
+    "id": "DZ1004",
+    "name": "锡锭",
+    "res_name": "DZ1004",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "锡定,锻造材料.可锻造锡质材料"
+  },
+  {
+    "id": "DZ1005",
+    "name": "金锭",
+    "res_name": "DZ1005",
+    "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "金定,锻造材料.可锻造金质材料"
+  },
+  {
+    "id": "GJ1001",
+    "name": "石斧头",
+    "res_name": "GJ1001",
+    "weight": 4,
+    "ATK": 1,
+    "expiry": 10,
+    "describe": "石制斧头,工具,可以砍伐树木,攻击"
+  }
+]
