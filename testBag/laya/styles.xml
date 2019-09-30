@@ -1,0 +1,5 @@
+<res>
+   <item name="ui/icon/SW1001.png" type="Sprite" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="ui/img_inputBG.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=20,20,20,20" picType="0" scale="0"/>
+   <item name="ui/img_bg_1.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=10,10,10,10" picType="0" scale="0"/>
+</res>

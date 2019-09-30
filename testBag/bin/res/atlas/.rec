@@ -39,5 +39,17 @@ P 5FD17798 vscroll.png
 P DDDDFB9E vslider$bar.png
 P 01BAE7F5 vslider.png
 D ui
+R 50D465D6 bg_0.png
+P CBB54339 btn0.png
+P EA948D01 btn1_L.png
+P A5776212 btn1_R.png
+P B4BC1395 img_bg_1.png
+P FCE11827 img_inputBG.png
+R B50E9C14 logo.png
+P F91A2D00 slot_bg.png
+P F4246E11 slot_sel.png
+P A271655D slot_zhao.png
+P 820536AB test_Bg.png
 D ui/icon
-P 89823BB9 SW1001.png
+P 83174CFC SW1001.png
+P F0F4B8F7 SW1002.png
