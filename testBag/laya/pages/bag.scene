@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":8,
-    "selecteID":6,
+    "selectedBox":2,
+    "selecteID":60,
     "searchKey":"View,bag",
     "props":{"width":2208,"sceneColor":"#000000","name":"bag","height":1242},
     "nodeParent":-1,
-    "maxID":48,
+    "maxID":71,
     "label":"bag",
     "isOpen":true,
     "isDirectory":true,
@@ -49,14 +49,13 @@
             "props":{"y":279,"x":153,"name":"bag_0"},
             "nodeParent":2,
             "label":"bag_0",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":36,
             "child":[
                 {
-                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"width":504,"skin":"ui/img_bg_1.png","height":634},
@@ -71,7 +70,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite",
                     "props":{"y":510,"x":17,"texture":"ui/test_Bg.png"},
@@ -85,7 +83,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Button",
                     "searchKey":"Button,item_add",
                     "props":{"y":665,"x":149,"skin":"ui/btn0.png","sizeGrid":"10,10,10,10","name":"item_add","labelSize":30,"labelFont":"Microsoft YaHei","labelColors":"#1c517c,#1999ea,#073962","labelBold":true,"label":"获得道具"},
@@ -99,10 +96,9 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"List",
                     "searchKey":"List,bagLlist,bagItemList",
-                    "props":{"y":11,"x":11,"var":"bagItemList","spaceY":20,"spaceX":20,"repeatY":4,"repeatX":4,"name":"bagLlist"},
+                    "props":{"y":11,"x":11,"var":"bagItemList","spaceY":15,"spaceX":15,"selectEnable":true,"repeatY":4,"repeatX":4,"name":"bagLlist","mouseEnabled":true},
                     "nodeParent":36,
                     "label":"bagLlist",
                     "isOpen":true,
@@ -112,10 +108,9 @@
                     "compId":17,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,item,dataSource",
-                            "props":{"var":"dataSource","rotation":0,"renderType":"render","name":"item"},
+                            "props":{"var":"dataSource","rotation":0,"renderType":"render","name":"item","mouseEnabled":true},
                             "nodeParent":17,
                             "label":"item",
                             "isOpen":true,
@@ -125,7 +120,6 @@
                             "compId":8,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Sprite",
                                     "searchKey":"Sprite,slot_bg",
                                     "props":{"y":0,"x":0,"texture":"ui/slot_bg.png","name":"slot_bg"},
@@ -139,10 +133,9 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Image",
                                     "searchKey":"Image,icon",
-                                    "props":{"y":7,"x":7,"width":90,"name":"icon","height":90},
+                                    "props":{"y":7,"x":7,"width":90,"visible":true,"name":"icon","height":90},
                                     "nodeParent":8,
                                     "label":"icon",
                                     "isDirectory":false,
@@ -150,13 +143,13 @@
                                     "hasChild":false,
                                     "compId":5,
                                     "child":[
-                                        ]
+                                        ],
+                                    "$HIDDEN":false
                                 },
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,itemNum,item_numder",
-                                    "props":{"y":73,"x":47,"width":50,"var":"item_numder","rotation":0,"name":"itemNum","height":24,"fontSize":24,"font":"Microsoft YaHei","color":"#f4fff2","bold":true,"align":"right"},
+                                    "props":{"y":72,"x":47,"width":50,"var":"item_numder","rotation":0,"name":"itemNum","height":24,"fontSize":24,"font":"Microsoft YaHei","color":"#f4fff2","bold":true,"align":"right"},
                                     "nodeParent":8,
                                     "label":"itemNum",
                                     "isOpen":true,
@@ -165,15 +158,16 @@
                                     "hasChild":false,
                                     "compId":6,
                                     "child":[
-                                        ]
+                                        ],
+                                    "$HIDDEN":false
                                 },
                                 {
-                                    "x":60,
                                     "type":"Sprite",
                                     "searchKey":"Sprite,slot_zhao",
-                                    "props":{"y":0,"x":0,"texture":"ui/slot_zhao.png","name":"slot_zhao"},
+                                    "props":{"y":-1,"x":0,"texture":"ui/slot_zhao.png","name":"slot_zhao"},
                                     "nodeParent":8,
                                     "label":"slot_zhao",
+                                    "isOpen":true,
                                     "isDirectory":false,
                                     "isAniNode":false,
                                     "hasChild":false,
@@ -182,11 +176,38 @@
                                         ],
                                     "$LOCKED":true,
                                     "$HIDDEN":false
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "searchKey":"Sprite,slot_sel",
+                                    "props":{"y":-6,"x":-6,"visible":false,"texture":"ui/slot_sel.png","name":"slot_sel"},
+                                    "nodeParent":8,
+                                    "label":"slot_sel",
+                                    "isDirectory":false,
+                                    "isAniNode":false,
+                                    "hasChild":false,
+                                    "compId":55,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Label",
+                                    "searchKey":"Label,itemName",
+                                    "props":{"y":7,"x":5,"width":1,"visible":false,"rotation":0,"name":"itemName","height":1,"fontSize":1,"font":"Microsoft YaHei","color":"#f4fff2","bold":true,"align":"right"},
+                                    "nodeParent":8,
+                                    "label":"itemName",
+                                    "isOpen":true,
+                                    "isDirectory":false,
+                                    "isAniNode":false,
+                                    "hasChild":false,
+                                    "compId":57,
+                                    "child":[
+                                        ],
+                                    "$HIDDEN":false
                                 }]
                         }]
                 },
                 {
-                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,itemNum",
                     "props":{"y":524,"x":21,"name":"itemNum"},
@@ -227,7 +248,6 @@
                     "$HIDDEN":false
                 },
                 {
-                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,itemID",
                     "props":{"y":563.5,"x":21,"name":"itemID"},
@@ -266,6 +286,19 @@
                                 ]
                         }],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Label",
+                    "searchKey":"Label,articleName",
+                    "props":{"y":0,"x":539,"width":549,"valign":"middle","text":"道具名字","name":"articleName","height":86,"fontSize":40,"font":"Microsoft YaHei","color":"#1db7f3","bold":true,"align":"center"},
+                    "nodeParent":36,
+                    "label":"articleName",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":58,
+                    "child":[
+                        ]
                 }],
             "$HIDDEN":false
         },
@@ -283,6 +316,124 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":11,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "searchKey":"Box,tips",
+            "props":{"y":511,"x":684,"visible":false,"name":"tips"},
+            "nodeParent":2,
+            "label":"tips",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":60,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Image",
+                    "searchKey":"Image",
+                    "props":{"y":0,"x":0,"width":300,"skin":"ui/img_bg_1.png","height":400,"alpha":0.5},
+                    "nodeParent":60,
+                    "label":"Image",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":65,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "searchKey":"Image,icon",
+                    "props":{"y":10,"x":10,"width":90,"visible":true,"name":"icon","height":90},
+                    "nodeParent":60,
+                    "label":"icon",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":62,
+                    "child":[
+                        ],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,tipsName",
+                    "props":{"y":18,"x":110,"width":180,"valign":"middle","text":"道具名字","name":"tipsName","height":35,"fontSize":30,"font":"Microsoft YaHei","color":"#bc16e5","align":"left"},
+                    "nodeParent":60,
+                    "label":"tipsName",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":59,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,tipsNum",
+                    "props":{"y":63,"x":110,"width":180,"valign":"middle","text":"999","name":"tipsNum","height":35,"fontSize":30,"font":"Microsoft YaHei","color":"#12a151","align":"left"},
+                    "nodeParent":60,
+                    "label":"tipsNum",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":66,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,describe_",
+                    "props":{"y":115,"x":12,"width":180,"valign":"middle","text":"描述:","name":"describe_","height":35,"fontSize":30,"font":"Microsoft YaHei","color":"#0c6ca1","align":"left"},
+                    "nodeParent":60,
+                    "label":"describe_",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":67,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,describe",
+                    "props":{"y":153,"x":10,"wordWrap":true,"width":278,"valign":"top","text":"坏掉的野猪肉,食用会拉肚子哦.使用可以增加体力值,和饥饿值","name":"describe","leading":10,"height":233,"fontSize":24,"font":"Microsoft YaHei","color":"#112834","align":"left"},
+                    "nodeParent":60,
+                    "label":"describe",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":68,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Button",
+            "searchKey":"Button,btn_test",
+            "props":{"y":767,"x":1425,"skin":"comp/button.png","name":"btn_test","label":"label"},
+            "nodeParent":2,
+            "label":"btn_test",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":70,
             "child":[
                 ]
         }],

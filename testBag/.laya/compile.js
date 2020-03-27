@@ -1,9 +1,14 @@
-// v1.1.0
+// v1.2.2
 //是否使用IDE自带的node环境和插件，设置false后，则使用自己环境(使用命令行方式执行)
-let useIDENode = process.argv[0].indexOf("LayaAir") > -1 ? true : false;
+const useIDENode = process.argv[0].indexOf("LayaAir") > -1 ? true : false;
+const useCMDNode = process.argv[1].indexOf("layaair2-cmd") > -1 ? true : false;
+
+function useOtherNode(){
+	return useIDENode||useCMDNode;
+}
 //获取Node插件和工作路径
-let ideModuleDir = useIDENode ? process.argv[1].replace("gulp\\bin\\gulp.js", "").replace("gulp/bin/gulp.js", "") : "";
-let workSpaceDir = useIDENode ? process.argv[2].replace("--gulpfile=", "").replace("\\.laya\\compile.js", "").replace("/.laya/compile.js", "") : "./../";
+let ideModuleDir = useOtherNode() ? process.argv[1].replace("gulp\\bin\\gulp.js", "").replace("gulp/bin/gulp.js", "") : "";
+let workSpaceDir = useOtherNode() ? process.argv[2].replace("--gulpfile=", "").replace("\\.laya\\compile.js", "").replace("/.laya/compile.js", "") : "./../";
 
 //引用插件模块
 const gulp = require(ideModuleDir + "gulp");
@@ -16,7 +21,6 @@ if (global.publish) {
 	prevTasks = ["loadConfig"];
 }
 
-//使用browserify，转换es6到es5，并输出到bin/js目录
 gulp.task("compile", prevTasks, function () {
 	// 发布时调用编译功能，判断是否点击了编译选项
 	if (global.publish && !global.config.compile) {
@@ -28,7 +32,13 @@ gulp.task("compile", prevTasks, function () {
 
 	return rollup.rollup({
 		input: workSpaceDir + '/src/Main.js',
-		treeshake: true,//建议忽略
+		onwarn:(waring,warn)=>{
+			if(waring.code == "CIRCULAR_DEPENDENCY"){
+				console.log("warnning Circular dependency:");
+				console.log(waring);
+			}
+		},
+		treeshake: false, //建议忽略
 		plugins: [
 			glsl({
 				// By default, everything gets included
