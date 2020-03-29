@@ -37,7 +37,7 @@
   },
   {
     "id": "KS1001",
-    "name": "铁矿石",
+    "name": "沙岩石",
     "res_name": "KS1001",
     "weight": 5,
     "ATK": 0,
@@ -175,6 +175,15 @@
     "name": "金锭",
     "res_name": "DZ1005",
     "weight": 6,
+    "ATK": 0,
+    "expiry": 10,
+    "describe": "金定,锻造材料.可锻造金质材料"
+  },
+  {
+    "id": "MC1001",
+    "name": "原木",
+    "res_name": "MC1001",
+    "weight": 5,
     "ATK": 0,
     "expiry": 10,
     "describe": "金定,锻造材料.可锻造金质材料"

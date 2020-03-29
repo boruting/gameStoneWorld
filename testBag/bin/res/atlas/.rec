@@ -38,18 +38,45 @@ P 0587871F vscroll$up.png
 P 5FD17798 vscroll.png
 P DDDDFB9E vslider$bar.png
 P 01BAE7F5 vslider.png
+D icon
+P 341344D8 GJ1001.png
+P AF27D947 KS1001.png
+P DF77A794 MC1001.png
+P 83174CFC SW1001.png
+P F0F4B8F7 SW1002.png
 D ui
 R 50D465D6 bg_0.png
+P 4A6B4A7D bg_1.png
 P CBB54339 btn0.png
 P EA948D01 btn1_L.png
 P A5776212 btn1_R.png
+P 030E7FEC btn_0.png
+P 341344D8 GJ1001.png
 P B4BC1395 img_bg_1.png
+P 5D2A84E4 img_huawen.png
+P EB93E1A8 img_input.png
 P FCE11827 img_inputBG.png
+P EF5D562D img_slot.png
+P 5347DDFE img_zhuangshi.png
 R B50E9C14 logo.png
+R AE04A22F scenes.jpg
 P F91A2D00 slot_bg.png
 P F4246E11 slot_sel.png
 P A271655D slot_zhao.png
 P 820536AB test_Bg.png
+D ui_0
+P D6C41228 bg_0.png
+P 4A6B4A7D bg_1.png
+P 030E7FEC btn_0.png
+P 4D89962E btn_1.png
+P 5D2A84E4 img_huawen.png
+P EB93E1A8 img_input.png
+P EF5D562D img_slot.png
+P 5347DDFE img_zhuangshi.png
+R AE04A22F scenes.jpg
+P 9B6989A5 slot_sel.png
 D ui/icon
+P AF27D947 KS1001.png
+P DF77A794 MC1001.png
 P 83174CFC SW1001.png
 P F0F4B8F7 SW1002.png
